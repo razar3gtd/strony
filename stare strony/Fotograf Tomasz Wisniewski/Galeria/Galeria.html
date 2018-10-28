@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en-US">
+        <head>
+          <meta charset="utf-8">
+          <meta http-equiv="Content-Type" content="text/html">
+          <title>Blog-Style Lightbox Gallery - Design Shack Demo</title>
+
+          <script src="lightbox/js/jquery-1.11.0.min.js"></script>
+        <script src="lightbox/js/lightbox.js"></script>
+        <link href="lightbox/css/lightbox.css" rel="stylesheet"/>
+
+            <style>
+            html{
+                overflow: hidden;
+            }
+                #Gallery{
+                    display: flex;
+                    flex-wrap:wrap;
+                    width: 80%;
+                    margin:1em;
+                    padding:.5em;
+                
+                    border:solid 3px black;
+                    height: 800px;
+                }
+                .ramka_obrazka{
+                    margin:15px;
+                    width: 150px;
+                    height: 150px;
+                    box-sizing:border-box;
+                }
+                .obrazek{
+                width: 100%;
+                } 
+                .Gallery div{
+                    flex-basis:25%;
+                    flex-grow: 1;
+                    -webkit-flex-grow: 1;
+                }
+                .Gallery:nth-child(2n+1){
+                    flex-grow: 2;
+                    -webkit-flex-grow: 1;
+                }           
+            </style>
+
+        </head>
+
+        <body>
+                <div id="Gallery">
+                       
+                        
+                         <div class="ramka_obrazka"><a href="img/demopage/image-2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-2.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-2.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-6.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-6.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-5.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-5.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-4.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-4.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-1.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-1.jpg" alt=""></a></div>
+                         <div class="ramka_obrazka"><a href="img/demopage/image-3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="img/demopage/thumb-3.jpg" alt=""></a></div>
+
+
+               
+                 </div>
+               
+        </body>
+
+
+</html>

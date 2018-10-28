@@ -1,0 +1,175 @@
+<html>
+	<head>
+		<title>Strona Główna</title>
+		<meta charset="utf-8">
+		<script src="lightbox/js/jquery-1.11.0.min.js"></script>
+        <script src="Galeria/lightbox/js/lightbox.js"></script>
+        <link href="Galeria/lightbox/css/lightbox.css" rel="stylesheet"/>
+      
+		<style>
+
+		ul{
+			padding:0;
+			margin:0;
+		}
+
+		body{
+			background-color: #333;
+			margin:0;
+			font-size: 15px;
+
+		}
+		/*=============================================GALERIA==============================*/
+		 			#Gallery{
+		 			
+                    display: flex;
+                    flex-direction:column;
+                    flex-wrap:wrap;
+                    width: 60%;
+                    margin:1em auto;
+                    padding:.5em;
+                    min-height: 100vh;
+                    max-height: 120vh;    
+                    align-content:flex-start;  
+                    align-items:flex-start;      
+                    box-sizing:border-box;
+                   
+                        
+                }
+                #Gallery:hover .ramka_obrazka{
+                	opacity:0.5;
+                	-webkit-transition: opacity 0.3s ease ;
+                	-o-transition: opacity 0.3s ease ;
+                	transition: opacity 0.3s ease ;
+                
+
+                }
+                .ramka_obrazka{
+                	min-width:100px;
+                    margin:0.5em;
+                  	min-height: 187px;
+                  	overflow: hidden;
+                  	flex-shrink:3;
+             
+                 
+                  
+                }
+                .ramka_obrazka:hover{
+                	opacity:1.0 !important;
+                }
+
+                .obrazek{
+                width: 100%;
+                height: auto;
+                box-sizing:border-box;
+                } 
+        	
+                       
+
+			/*=========================================MENU=====================================*/
+				nav{
+
+					width: 100%;
+					padding:0;
+					margin:0;
+					background-color: rgb(75,75,75);
+					overflow: hidden;
+				}
+
+				
+				.menu{
+					margin-top:.5em;
+					display: flex;
+					width: 50%;
+					height: 6.24879%;
+					align-items:space-between;
+					position: relative;
+					left:50%;
+					
+				}	
+						
+				.menu_item{
+					height: 2.2666666666666666em;
+					width:14.25%;
+					list-style:none;
+		
+					box-sizing:border-box;
+					text-align: center;
+
+				}	
+				.kontakt{
+					border: 1px solid rgba(255,255,255,0.8);
+					border-radius: 5px;
+				
+				}
+				.link{
+					text-decoration: none;
+					color:white;
+					font-weight: lighter;
+					display:block;
+					padding:10px;
+					height: 2.26666666em;
+					width:114px;
+					box-sizing:border-box;
+
+					
+					
+				}
+				/*=========================================MENU=====================================*/
+				.slider__item{
+					background-image: url(zdjecia/img1.jpg);
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+
+		</style>
+
+	</head>
+
+	<body>
+		 	<!-- ======================MENU====================== -->
+		 	<nav>
+		 		
+		 				<ul class="menu">
+		 			<li class="menu_item"><a class="link" href="Jquery próby.html">Strona Główna</a></li>
+		 			<li class="menu_item"><a class="link" href="#">O mnie</a></li>
+		 			<li class="menu_item"><a class="link" href="Galeria _photo.html">Galeria</a></li>
+		 			<li class="kontakt menu_item"><a class="link" href="Kontakt.html">Kontakt</a></li>
+
+		 		</ul>
+		 	</nav>
+											<!-- =======================================Zdjecia============================ -->
+			 <div id="Gallery">
+                       
+                       
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/1.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/1.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/2.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/3.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/4.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/4.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/5.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/5.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/3.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/4.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/4.png" alt=""></a></div>
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/2.png" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria/Galeria_photo/Large/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria/Galeria_photo/Thumbnails/3.png" alt=""></a></div>
+
+						
+
+
+               
+                 </div>
+               <script>
+           
+      
+              
+               </script>
+		
+				
+	</body>
+</html>
