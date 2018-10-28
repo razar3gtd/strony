@@ -1,0 +1,276 @@
+<html>
+	<head>
+		<title>Fotografia Produktowa</title>
+			<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+			<link rel="stylesheet" type="text/css" href="Lightbox/jquery.lightbox.css">
+		<link rel="stylesheet" type="text/css" href="Formularz kontaktowy/formularz.css">
+		<link rel="stylesheet" href="cssmenu/styles.css">
+		
+			<script src="Lightbox/jquery.lightbox.min.js"></script>
+  		<script src="cssmenu/script.js"></script>
+      
+		<style>
+
+		ul{
+			padding:0;
+			margin:0;
+		}
+
+		body{
+			font-family: Montserrat, sans-serif;
+			background-color: #333;
+			margin:0;
+			font-size: 15px;
+
+		}
+		/*=============================================GALERIA==============================*/
+		 			.gallery{
+		 				display:-webkit-box;
+					display: -moz-box;
+					display: -ms-flexbox;
+					display:-webkit-flex;
+					display: flex;
+                    display: flex;
+                    flex-direction:column;
+                    flex-wrap:wrap;
+                    align-content:space-around;
+                    width: 90%;
+                    margin:1em auto;
+                 	height:1300px;    
+                   
+                   
+                        
+                }
+                .gallery:hover .ramka_obrazka{
+                	opacity:0.5;
+                	-webkit-transition: opacity 0.3s ease ;
+                	-o-transition: opacity 0.3s ease ;
+                	transition: opacity 0.3s ease ;
+                
+
+                }
+                .ramka_obrazka{
+                	
+					width:24%;
+                    margin:0.1em;
+              		overflow: hidden;
+              		box-sizing:border-box;
+                           
+                      }
+                .ramka_obrazka:hover{
+                	opacity:1.0 !important;
+                }
+
+                .obrazek{
+               
+                width: 100%;
+              	padding:0;
+           		margin:0;
+               
+                } 
+          @media only screen and (min-width: 1600px) {
+          		.gallery{
+          			height: 80vw;
+
+        	  }
+  			  }
+    	@media only screen and (min-width: 1230px) and (max-width:1440px){
+    		.gallery{
+    			height: 1150px;
+
+    		}
+    		
+
+    	}
+    	@media only screen and (min-width:921px) and (max-width:1240px){
+    		.gallery{
+    			height: 1800px;
+    		}
+    		.ramka_obrazka{
+    			width:32.9%;
+
+    		}
+
+    	}
+    		@media only screen and (min-width:780px) and (max-width:920px){
+    		.gallery{
+    			height: 1400px;
+    		}
+    		.ramka_obrazka{
+    			width:32.9%;
+
+    		}
+
+    	}
+    		@media only screen and (max-width:769px){
+    		.gallery{
+    			width:80%;
+    			height: 150vw;
+    		}
+    		.ramka_obrazka{
+    			width:32.9%;
+
+    		}
+
+    	}
+    	@media only screen and (max-width:480px){
+    		.gallery{
+    			width:80%;
+    			height: 1500px;
+    		}
+    		.ramka_obrazka{
+    			width:49.9%;
+
+    		}
+    	
+    		.Nav-container{
+    			font-size: 0.8em;
+    		}
+    	
+
+    	}
+    
+
+			
+				.Nav-container{
+					margin:0 auto;	
+					width: 80%;
+					display:-webkit-box;
+					display: -moz-box;
+					display: -ms-flexbox;
+					display:-webkit-flex;
+					display: flex;
+					justify-content:space-between;
+
+				}
+				.Nav-item{
+			
+					color: white;
+				
+				
+					
+				}
+				.Nav-item a{
+					width:100%;
+					display: block;
+					text-align: right;
+					text-decoration: none;
+					color: white;
+				}
+				.left-item{
+				
+				}
+			
+				.center-item-link{
+					text-decoration: underline !important;
+					text-align: center;
+					font-size: 1.3em !important;
+					
+				}
+			
+				.left-item-icon{
+					position: absolute;
+					left:10px;
+					background: url(zdjecia/back57.svg);
+					width:30px;
+					height: 30px;
+			
+									}
+				.right-item-icon{
+					position: absolute;
+					right: 10px;
+					width:30px;
+					height: 30px;
+					background: url(zdjecia/back57.svg);
+					-moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+					
+				}
+									
+				
+
+		</style>
+
+	</head>
+
+	<body>
+		 	<!-- ======================MENU====================== -->
+		 			 	<div id='cssmenu'>
+												<ul class="ul">
+						   <li class="li"><a href='index.html'>Strona Główna</a></li>
+						   <li class=' li active'><a href='About.html'>O mnie</a>
+						    
+						         <li class="li"><a href='Galeria _photo.html'>Galeria</a>
+						             
+						         </li>
+						         <li class="li"><a href='Kontakt.html'>Kontakt</a>
+						            
+						         </li>
+						     
+						   </li>
+ 
+			</ul>
+		</div>							<div class="Nav-container">
+											<div class="left-item-icon"></div>
+											<div class="Nav-item left-item"><a href="Galeria _photo.html">Ślubna</a></div>
+											<div class="Nav-item center-item"><a class="center-item-link" href="Galeria_produktowa.html">Produktowa</a></div>
+											<div class="Nav-item right-item"><a href="Galeria_portretowa.html">Portretowa</a></div>
+											<div class="right-item-icon"></div>
+										</div>	
+
+											<!-- =======================================Zdjecia============================ -->
+			 <div class="gallery">
+                       
+                       
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/1.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/1.jpg" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/2.jpg" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/3.jpg" alt=""></a></div>
+
+							
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/5.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/5.jpg" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/3.jpg" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/4.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/4.jpg" alt=""></a></div>
+							
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/3.jpg" alt=""></a></div>
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/4.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/4.jpg" alt=""></a></div>
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/2.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/2.jpg" alt=""></a></div>
+							
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/5.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/5.jpg" alt=""></a></div>
+
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/3.jpg" alt=""></a></div>
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/3.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/3.jpg" alt=""></a></div>
+							<div class="ramka_obrazka"><a href="Galeria_photo/Duze/1.jpg" data-lightbox="image-1" data-title="My caption"><img class="obrazek" src="Galeria_photo/Miniaturki/1.jpg" alt=""></a></div>
+
+
+						
+
+
+               
+                 </div>
+               <script>
+ $(function()
+ {
+    $('.gallery a').lightbox(); 
+
+    // If you want seperate galleries on the same page
+    // just specify different class names. 
+    $('.gallery-2 a').lightbox();
+ });
+</script>
+		
+				
+	</body>
+</html>

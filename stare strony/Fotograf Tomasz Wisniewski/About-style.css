@@ -1,0 +1,112 @@
+
+		ul{
+			padding:0;
+			margin:0;
+		}
+
+		body{
+	
+		
+		background-attachment:fixed;	
+		margin:0;
+		font-size: 15px;
+
+		}
+		.link{
+			color:white;
+			text-decoration: none;
+
+
+		}
+
+			
+				#Main_container{
+					width: 100%;
+		
+					background-image: url(zdjecia/scal.jpg);
+					background-repeat: no-repeat;
+					background-attachment:fixed;
+					background-size: contain;
+		
+					background-position: right; 
+				
+
+				
+				}
+				@media only screen and (min-width: 1370px){
+					#Main_container{
+						height: 100%;
+					}
+				}
+				#Text{
+					margin: 0 auto;
+					text-align: left;
+					padding: .5em;
+					font-size: 1.3em;
+					width:100%;				
+					box-sizing:border-box;
+				}
+				section{
+			
+					padding: .5em;
+				
+					width: 100%;
+					box-sizing:border-box;
+				}
+				.border{
+					display: fixed;
+					width: 100%;
+				
+					
+				}
+				.Text_container{
+
+					width:60%;
+					display: fixed;
+
+				}
+				footer{
+					width:110px;
+					display: block;
+					margin:5px auto;
+				}
+				nav{
+					display: none;
+					width:150px;
+				}
+				nav a{
+
+					text-decoration: none;
+					color:black;
+					
+					margin:5px auto;
+				}
+				@media only screen and (min-width:700px ) and (max-width:1280px){
+
+					.Text_container{
+
+					width:100%;
+					height:100%;
+					}
+					
+				}
+				@media only screen and (max-width:770px){
+					#Main_container{
+						background-size: auto;
+
+					}
+					.Text_container{
+
+						width:100%;
+					}
+
+				}
+				@media only screen and (max-width: 770px){
+					nav{
+						display: block;
+					}
+					.border{
+						background-color:rgba(255,255,255,0.7);
+					}
+				}
+			

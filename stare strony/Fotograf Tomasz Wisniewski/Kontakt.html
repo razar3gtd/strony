@@ -1,0 +1,199 @@
+<html>
+	<head>
+		<title>Strona Główna</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" type="text/css" href="Formularz kontaktowy/formularz.css">
+		<script src='js/jquery-1.11.1.min.js'></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+   		<link rel="stylesheet" href="cssmenu/styles.css">
+  		<script src="cssmenu/script.js"></script>
+
+		<style>
+
+		ul{
+			padding:0;
+			margin:0;
+		}
+
+		body{
+			background-color: #333;
+			margin:0;
+			font-size: 15px;
+			font-family: bodoni !important;
+				
+
+		}
+		
+				
+			/*=========================================MENU=====================================*/
+
+				.kontakt{
+					border: 1px solid rgba(255,255,255,0.8);
+					border-radius: 5px;
+				
+				}
+				.link{
+
+					font-weight: lighter;
+					display:block;
+					padding:10px;
+					height: 2.26666666em;
+					width:114px;
+					box-sizing:border-box;
+					color:white;
+					text-decoration: none;
+
+					
+					
+				}
+			
+				/*=========================================MENU end=====================================*/
+				.slider__item{
+			
+					background-repeat: no-repeat;
+					background-size: cover;
+				}
+				.Left{
+					background-color: rgba(33,33,33,0.5);
+					padding-left:10px;
+					display: block;
+					width:40%;
+					height: 90vh;
+					float:left;
+					 box-sizing:border-box;
+			   
+				}
+				.form_head{
+		text-align: center;
+		color:white;
+		font-family: bodoni;
+		font-style: italic;
+	}
+
+
+			    #map_canvas {
+
+			    	float:right;
+			  	
+			    width: 60%;
+			    height: 90vh;
+			    box-sizing:border-box;
+			   
+			  }	
+			  .Dane_cont{
+			  	position:relative;
+			  	top:-35px;
+			  	width:100%;
+			  	list-style: none;
+
+			  }
+			  .Dane_cont li{
+			  	margin:.3em;
+			  	text-align: center;
+				color:white;
+				font-family: bodoni;
+				font-style: italic;
+			  }
+			  	@media only screen and (max-width:1100px){
+		.left{
+			display: block;
+			width:100%;
+			height:800px;
+			}
+		 #map_canvas {
+		 	margin:10px 0;
+			display:block;
+		 	height: 100vh;
+		 	width:100%;
+		 	clear:both;
+		 	box-sizing:border-box;
+		 }
+	}
+		
+				</style>
+							   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+							    <script>
+
+							function initialize() {
+							  var mapOptions = {
+							    zoom:14,
+							    center: new google.maps.LatLng(50.306400, 18.787681)
+							  }
+							  var map = new google.maps.Map(document.getElementById('map_canvas'),
+							                                mapOptions);
+
+							  
+							  var myLatLng = new google.maps.LatLng(50.306400, 18.787681);
+
+							  var Marker = new google.maps.Marker({
+							      position: myLatLng,
+							      map: map,
+							      title: "Fotograf Zabrze"
+							     
+							  });
+							}
+
+							google.maps.event.addDomListener(window, 'load', initialize);
+
+							    </script>
+	</head>
+
+	<body>
+		 	<!-- ======================MENU====================== -->
+		 	<div id='cssmenu'>
+												<ul class="ul">
+						   <li class="li"><a href='index.html'>Strona Główna</a></li>
+						   <li class=' li active'><a href='About.html'>O mnie</a>
+						    
+						         <li class="li"><a href='Galeria _photo.html'>Galeria</a>
+						             
+						         </li>
+						         <li class="li"><a href='Kontakt.html'>Kontakt</a>
+						            
+						         </li>
+						     
+						   </li>
+ 
+			</ul>
+		</div>	
+		 	<div class="Container">
+	
+				<div class="Left">	
+				<h1 class="form_head">Skontaktuj się z nami!</h1>	
+					<div id="Form">
+								<form method="post" action="kontakt.php">
+							        
+							    <label>Imie i nazwisko</label>
+							    <input name="name" placeholder="Jan kowalski">
+							            
+							    <label>Email</label>
+							    <input name="email" type="email" placeholder="twoj@e-mail.pl">
+							            
+							    <label>Wiadomość</label>
+							    <textarea name="message" placeholder="Napisz tu wiadomość"></textarea>
+							            
+							    <input id="submit" name="submit" type="submit" value="Wyślij">
+							        
+							</form>
+						</div>	
+						<div>
+						
+							<ul class="Dane_cont">
+								<li><h2>Zakład Fotograficzny Tomasz Wiśniewski</h2></li>
+								<li>Adres: ul. Wolności 298, 41-800 Zabrze</li>
+								<li>E-mail: tgjwisniewscy@poczta.onet.pl</li>
+								<li>Tel:+48 603 080 455</li>
+							</ul>
+						</div>
+				</div>
+						<div id="map_canvas"></div>
+			</div>		
+		
+							
+			
+		   
+				
+				
+	</body>
+</html>
