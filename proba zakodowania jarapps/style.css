@@ -132,6 +132,7 @@ h1
 h2
 {
   font-family: 'Rajdhani semibold', sans-serif;
+  font-size: 2em;
 }
 p
 {
@@ -173,7 +174,9 @@ div.flex-container
 {
 	display: flex;
 	flex-direction: row;
+	flex-wrap:wrap;
 	text-align: center;
+	justify-content: space-around;
 }
 
 
@@ -202,8 +205,10 @@ a.button {
 }
 #cel
 {
-	padding-right: 3em;
-	padding-left: 3em;
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	width: 300px;
+/*	background-color: blue;*/
 }
 }
 
@@ -218,12 +223,10 @@ a.button {
 }
  	div h1
  	{
-	width: 10em;
 	height: 1em;
 	color: #fe7f00;
 /*	background-color: #eee;*/
 	text-align: left;
-	display:table-cell;
     vertical-align:middle;
     font-family: 'Rajdhani semibold', sans-serif;
     font-size: 4em;
@@ -250,11 +253,14 @@ a.button {
 	margin-left: 55%
 
 }
-/*#cel
+#cel
 {
-	padding-right: 3em;
-	padding-left: 3em;
-}*/
+	padding-right: 1.5em;
+	padding-left: 1.5em;
+	width: 300px;
+/*	background-color: blue;*/
+
+}
 }
 
 @media (max-width: 1070px)
@@ -446,7 +452,12 @@ a.button {
 {
 	display: flex;
 	justify-content: center;
-	flex-direction: column;
+/*	flex-direction: column;*/
+}
+
+#cel
+{
+	width: auto;
 }
 
 div.page-section
@@ -454,6 +465,12 @@ div.page-section
 	margin-top: 60%;
 /*	display: flex; */
 /*	margin-bottom: : 10%;*/
+}
+
+.opisoferta
+{
+	margin-right: 2em;
+	margin-left: 2em;
 }
 
 @media (max-width: 450px)
@@ -468,7 +485,6 @@ div.page-section
     z-index: 4;
     margin-left: 1em;
 }
-
 }
 
 /*nav
