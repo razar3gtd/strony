@@ -74,7 +74,6 @@ header nav ul li a.active
 	height: 1.8em;
 	border-bottom: 0.14em solid #fe7f00;
 	padding: 1 20px;
-	width: -webkit-min-content;
 
 
 }
@@ -371,6 +370,9 @@ a.button {
 	{
 	color: #fff;
 	background: #fe7f00;
+	height: auto;
+	border-bottom: none;
+	margin: 0;
 	}
 	
 		.container 
@@ -460,7 +462,7 @@ a.button {
 	width: auto;
 }
 
-div.page-section
+div.page-section 1
 {
 	margin-top: 60%;
 /*	display: flex; */
