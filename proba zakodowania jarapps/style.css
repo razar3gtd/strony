@@ -61,9 +61,10 @@ header nav ul li a
 	padding-top: 0.5em;
 	display:block;
 	color: #000;
-	font-family: 'Rajdhani semibold', sans-serif;
+	font-family:'Rajdhani', sans-serif;
 	font-size: 1.3em;
 	color: #676767;
+	font-weight: 600;
 }
 header nav ul li a:hover,
 header nav ul li a.active
@@ -126,7 +127,8 @@ span.bobo2
 
 h1, h2, p
 {
-  font-family: 'Rajdhani semibold', sans-serif;
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -157,6 +159,8 @@ div.page-section
 	color:#676767;
 	font-size: 3em;
 	text-align: center;
+	font-family: 'Rajdhani', sans-serif;
+	font-weight: 600;
 
 }
 
@@ -216,13 +220,43 @@ div.flex-container
 	margin-left: 50px;
 }
 
+div.projekt:nth-child(n+13)
+	{
+	  display: none;
+	}
+
 .projekt
 {
 	background-color: #676767;
 	height: 12em;
 	width: 24.5%;
+	display: none;
 	margin: 0.1rem;
+
 }
+
+div.batton3
+	{
+	margin-top: 2%;
+	display: block;
+/*    margin: 4px 2px;*/
+    cursor: pointer;
+    justify-content: center;
+    z-index: 1;
+        background-color: #fe7f00;
+    border-radius: 0.5em;
+    color: white;
+/*    padding: 1em 3em;*/
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.75em 1.7em;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
+    margin-left: 35%;
+    margin-right: 35%;
+    }
+
 
 .flex-container-Kontakt
 {
@@ -240,18 +274,313 @@ button  {
     text-decoration: none;
     font-size: 1.2em;
     padding: 0.75em 1.8em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     margin-left: 0;
     border: none;
    	}
 
 
+/*div.flex-container-Footer {
+	display: flex;
+}
+
+
+.button-kontakt {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 3em;
+}
+
+.informacje_kontaktowe.telefon {
+	margin-top: -3em;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*STOPKA*/
+
+
+.flex-container-footer {
+    display: flex;
+    flex-direction: row 
+
+    justify-content: center;
+    font-family:'Rajdhani', sans-serif;
+}
+
+
+.Menu-Footer 
+{
+
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.Menu-Footer h4
+{
+    font-size: 1.1em;
+    padding-left: 2.2em;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 500;
+}
+
+.Menu-Footer ul li
+{
+    list-style: none;
+    text-decoration: none;
+    padding-top: 0.3em;
+    color: #000;
+    font-family:'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    cursor: pointer;
+} 
+
+.Menu-Footer ul li a
+{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+}
+
+
+
+.kontakt-Footer {
+
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+}
+
+
+.kontakt-Footer h4
+{
+    font-size: 1.1em;
+    padding-left: 0.5em;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 500;
+}
+
+
+.kontakt-Footer ul li
+{
+    list-style: none;
+    text-decoration: none;
+
+    margin-left: -2.2em;
+    color: #000;
+    font-family:'Rajdhani', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    cursor: pointer;
+    color: white;
+    line-height: 2.2em;
+} 
+
+.kontakt-Footer ul li a
+{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+}
+
+
+
+.kontakt-Footer ul li:first-child:before
+{
+    content:'';
+    width: 1.7em;
+    height: 1.7em;
+    background-color: white;
+    display: inline-block;
+    background: transparent url('icons/tel.svg');
+    background-size: 2.2em 2.4em;
+    margin-right: 0.3em;
+    margin-bottom: -0.3em;
+}
+
+.kontakt-Footer ul li:last-child:before
+{
+    content:'';
+    width: 1.7em;
+    height: 1.7em;
+    background-color: white;
+    display: inline-block;
+    background: transparent url('icons/mail.svg');
+    background-size: 2.2em 2.4em;
+    margin-right: 0.3em;
+    margin-bottom: -0.3em;
+}
+
+
+
+.Social-Media {
+
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+}
+
+.Social-Media h4
+{
+    font-size: 1.1em;
+    padding-left: 2.2em;
+    margin-bottom: 0;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.Social-Media p
+{
+    margin-top: 0;
+    padding-left: 2.2em;
+    color: white;
+    font-weight: 300;
+}
+
+
+.Social-Media div.socialmediaicons img 
+{
+    padding-left: 1.5em;
+    width: 10em;
+    height: auto;
+}
+
+
+.footer-button {
+
+    display: flex;
+    width: 23%;
+}
+
+
+
+div.stopka {
+    background-color: #676767;
+    width: 100%;
+    height: 18em;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+
+div.stopka button {
+    background-color: #fe7f00;
+    border: none;
+    border-radius: 0.2em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 0.9em 2.8em;
+    cursor: pointer;
+    position: relative;
+    margin-left: 28%;
+
+    margin-top: 13%;
+}
+
+
+.prawa_autorskie 
+{
+    text-align: center;
+    font-family:'Rajdhani', sans-serif;
+    font-weight: 300;
+    color: white;
+    margin-top: -1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media (min-width: 1450px)
+{
+	div.bobo h1
+	{
+		font-size: 6em;
+		line-height: 1.15em;
+	}
+
+}
+
+
+/*@media (min-width: 1350px)
+{
+	div.bobo h1
+	{
+		font-size: 5em;
+		line-height: 1.1em;
+	}
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1180px)
 {
+
+	div.bobo h1
+	{
+		line-height: 1.15em;
+	}
+
+
 	div.batton
 	{
     margin-top: 2.4em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
 a.button {
@@ -267,7 +596,7 @@ a.button {
 /*    padding-top: 1em;*/
 	position: relative;
 /*	margin-top: -30%;*/
-	margin-left: 60%
+	margin-left: 55%
 }
 #cel
 {
@@ -310,7 +639,7 @@ a.button {
 }
 
 #contact form input,#contact form label,#contact form select,#contact form textarea {
-    font-size: 1.9em;
+    font-size: 2.5em;
     font-weight: 100;
     color: #5d616294;
     font-family: 'Rajdhani', sans-serif;
@@ -326,7 +655,7 @@ a.button {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.3em;
     outline: 0
 }
 
@@ -342,7 +671,7 @@ a.button {
 }
 
 #contact form input:focus,#contact form input:valid,#contact form input[type=email]:not([value=""]),#contact form textarea:focus,#contact form textarea:valid {
-    border-bottom-color: #5d616294
+    border-bottom-color: #5d616294;
 }
 
 #contact form input:focus~label,#contact form input:valid~label,#contact form input[type=email]:not([value=""])~label,#contact form textarea:focus~label,#contact form textarea:valid~label {
@@ -351,7 +680,8 @@ a.button {
     color: #fe7f00;
     font-size: 1em;
     font-weight: 400;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
 #contact error {
@@ -364,7 +694,8 @@ a.button {
     opacity: 0;
     transition-property: opacity;
     transition-duration: .3s;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
 #contact form input.error,#contact form select.error,#contact form textarea.error {
@@ -429,20 +760,23 @@ a.button {
 	margin-top: -50%;
 	margin-left: 48%
 }
- 	div h1
+ 	div.bobo h1
  	{
 	height: 1em;
 	color: #fe7f00;
 /*	background-color: #eee;*/
 	text-align: left;
     vertical-align:middle;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     font-size: 4em;
+    line-height: 1.15em
 	}
 		div.batton
 	{
     margin-top: 2.4em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 	}
 
 	a.button {
@@ -458,7 +792,7 @@ a.button {
 /*    padding-top: 1em;*/
 	position: relative;
 /*	margin-top: -30%;*/
-	margin-left: 55%
+	margin-left: 48%
 
 }
 #cel
@@ -518,9 +852,9 @@ a.button {
 }
 
 #contact form input,#contact form label,#contact form select,#contact form textarea {
-    font-size: 1.9em;
+    font-size: 2.5em;
     font-weight: 300;
-    color: #5d6162;
+    color: #5d616294;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -534,7 +868,7 @@ a.button {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.3em;
     outline: 0
 }
 
@@ -550,7 +884,7 @@ a.button {
 }
 
 #contact form input:focus,#contact form input:valid,#contact form input[type=email]:not([value=""]),#contact form textarea:focus,#contact form textarea:valid {
-    border-bottom-color: #5d616294
+    border-bottom-color: #5d616294;
 }
 
 #contact form input:focus~label,#contact form input:valid~label,#contact form input[type=email]:not([value=""])~label,#contact form textarea:focus~label,#contact form textarea:valid~label {
@@ -600,10 +934,47 @@ a.button {
     opacity: 1
 }
 
+div.flex-container img {
+	width: 60%;
+}
 
 
 
 
+/*STOPKA*/
+
+
+
+div.stopka button {
+    border-radius: 0.2em;
+    color: white;
+    font-size: 1.2em;
+    padding: 0.4em 1.5em;
+    cursor: pointer;
+    position: relative;
+    margin-left: 0;
+
+    margin-top: 13%;
+}
+
+.Menu-Footer {
+    width: 24%;
+}
+
+.kontakt-Footer {
+    width: 25%;
+}
+
+
+.Social-Media {
+    width: 24%;
+}
+
+
+
+div.button-kontakt {
+	margin-left: 25%;
+}
 
 
 
@@ -623,7 +994,8 @@ a.button {
 		div.batton
 	{
     margin-top: 2.4em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 	}
 
 	a.button {
@@ -637,7 +1009,7 @@ a.button {
     padding: 0.5em 1.8em;
     cursor: pointer;
 	position: relative;
-	margin-left: 55%;
+	margin-left: 48%;
 	}
 
 		.szary2
@@ -681,9 +1053,9 @@ a.button {
 }
 
 #contact form input,#contact form label,#contact form select,#contact form textarea {
-    font-size: 1.9em;
+    font-size: 2.5em;
     font-weight: 300;
-    color: #5d6162
+    color: #5d616294;
 }
 
 #contact form input,#contact form select,#contact form textarea {
@@ -696,7 +1068,7 @@ a.button {
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.3em;
     outline: 0
 }
 
@@ -712,7 +1084,7 @@ a.button {
 }
 
 #contact form input:focus,#contact form input:valid,#contact form input[type=email]:not([value=""]),#contact form textarea:focus,#contact form textarea:valid {
-    border-bottom-color: #5d616294
+    border-bottom-color: #5d616294;
 }
 
 #contact form input:focus~label,#contact form input:valid~label,#contact form input[type=email]:not([value=""])~label,#contact form textarea:focus~label,#contact form textarea:valid~label {
@@ -721,7 +1093,8 @@ a.button {
     color: #fe7f00;
     font-size: 1em;
     font-weight: 400;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 }
 
 #contact error {
@@ -767,6 +1140,9 @@ a.button {
 
 
 
+div.button-kontakt {
+	margin-left: 10%;
+}
 
 
 
@@ -794,7 +1170,7 @@ a.button {
 	}
 	a.button 
 	{
-	margin-left: 48%;
+	margin-left: 40%;
 	}
 
 	.flex-container-portfolio
@@ -809,6 +1185,12 @@ a.button {
 	flex-wrap:wrap;
 }
 
+div.projekt:nth-child(n+10)
+	{
+	  display: none;
+	}
+
+
 .projekt
 {
 	background-color: #676767;
@@ -819,7 +1201,35 @@ a.button {
 
 
 
+
+
+div.button-kontakt {
+	margin-left: 0;
 }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 750px) /*750*//*991*/
 {
@@ -851,6 +1261,12 @@ a.button {
 	flex-wrap:wrap;
 }
 
+
+div.projekt:nth-child(n+7)
+	{
+	  display: none;
+	}
+
 .projekt
 {
 	background-color: #676767;
@@ -863,7 +1279,7 @@ a.button {
 {
 	display: flex;
 	height: 29em;
-/*	width: (50% - 15px);*/
+/*	width: (50% - 15px);
 	width: 50%;
 /*	background-color: blue;*/
 	margin-left: 20px;
@@ -943,7 +1359,8 @@ a.button {
 	font-size: 1.2em;
 	text-align: center;
 	color: #fe7f00;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
 	margin-top: 0.5em;
 	margin-bottom: -50%;
 	z-index: 2;
@@ -966,8 +1383,10 @@ a.button {
     text-decoration: none;
     font-size: 1.2em;
     padding: 0.75em 1.7em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     margin-left: 0;
+    display: none;
    	}
 
 	div.batton2
@@ -989,9 +1408,13 @@ a.button {
     text-decoration: none;
     font-size: 1.2em;
     padding: 0.75em 1.7em;
-    font-family: 'Rajdhani semibold', sans-serif;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 600;
     margin-left: 0;
    	}
+
+
+
 
     div.flex-container
 {
@@ -1029,9 +1452,9 @@ div#jeden
 
 
 #contact form input,#contact form label,#contact form select,#contact form textarea {
-    font-size: 1.9em;
+    font-size: 2.5em;
     font-weight: 300;
-    color: #5d6162
+    color: #5d616294;
 }
 
 #contact form input,#contact form select,#contact form textarea {
@@ -1044,7 +1467,7 @@ div#jeden
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 1.3em;
     outline: 0
 }
 
@@ -1055,7 +1478,7 @@ div#jeden
 }
 
 #contact form input:focus,#contact form input:valid,#contact form input[type=email]:not([value=""]),#contact form textarea:focus,#contact form textarea:valid {
-    border-bottom-color: #5d616294
+    border-bottom-color: #5d616294;
 }
 
 #contact form input:focus~label,#contact form input:valid~label,#contact form input[type=email]:not([value=""])~label,#contact form textarea:focus~label,#contact form textarea:valid~label {
@@ -1105,13 +1528,50 @@ div#jeden
 }
 
 
+.Menu-Footer {
+    display: none;
+}
+
+
+.kontakt-Footer {
+    width: 30%;
+}
+
+
+.Social-Media {
+	width: 30%;
+}
+
+
+.footer-button {
+   justify-content: flex-end;
+    width: 30%;
+}
 
 
 
+div.stopka {
+    height: 15em;
+}
 
 
 
+.flex-container-footer {
+    height: 13em;
+}
 
+
+.divprawaautor {
+    display: flex;
+    align-self: flex-end;
+    justify-content: center;
+}
+
+
+.prawa_autorskie {
+    display: flex;
+    align-self: flex-end;
+}
 
 
 
@@ -1120,7 +1580,7 @@ div#jeden
 
 
 }
-@media (max-width: 450px)
+@media (max-width: 599px)
 {
 	div.batton2
 	{
@@ -1152,7 +1612,7 @@ div#jeden
 .text-about
 {
 	margin-left: 0;
-	margin-top: 0;
+	margin: 0;
 	font-size: 1.3em;
 }
 
@@ -1168,20 +1628,35 @@ div#jeden
 	flex-wrap:wrap;
 }
 
+
+.opisoferta
+{
+	margin-right: 0em;
+	margin-left: 0em;
+}
+
+
+
+/*div.projekt:nth-child(n+6)
+	{
+	  display: none;
+	}
+*/
 .projekt
 {
 	background-color: #676767;
 	height: 9em;
 	width: 100%;
 	margin: 0.1rem;
+/*	display: none;*/
 }
 
 
 
 #contact form input,#contact form label,#contact form select,#contact form textarea {
-    font-size: 1.9em;
+    font-size: 2em;
     font-weight: 300;
-    color: #5d6162;
+    color: #5d616294;
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -1195,7 +1670,7 @@ div#jeden
     -moz-appearance: none;
     appearance: none;
     width: 100%;
-    margin-bottom: 1.7em;
+    margin-bottom: 0.8em;
     outline: 0
 }
 
@@ -1206,7 +1681,7 @@ div#jeden
 }
 
 #contact form input:focus,#contact form input:valid,#contact form input[type=email]:not([value=""]),#contact form textarea:focus,#contact form textarea:valid {
-    border-bottom-color: #5d616294
+    border-bottom-color: #5d616294;
 }
 
 #contact form input:focus~label,#contact form input:valid~label,#contact form input[type=email]:not([value=""])~label,#contact form textarea:focus~label,#contact form textarea:valid~label {
@@ -1256,20 +1731,39 @@ div#jeden
 }
 
 
+#jeden div.flex-container img {
+	width: 60%;
+}
+
+h1.szary2 {
+	margin: 0;
+}
 
 
 
 
+.kontakt-Footer {
+    width: 50%;
+}
 
 
+.Social-Media {
+	display: none;
+}
 
 
+.footer-button {
+    width: 40%;
+}
+
+.flex-container-footer {
+    height: 11em;
+}
 
 
-
-
-
-
+div.stopka {
+    height: 13em;
+}
 
 
 
@@ -1277,29 +1771,29 @@ div#jeden
 
 }
 
-/*nav
-{	
-	width: 100%;
-	background: white;
-}
-ul
+
+@media (max-width: 475px) 
 {
-	width: 80%;
-	margin: 0 auto;
-	padding: 0;
+
+
+.kontakt-Footer {
+    width: 80%;
 }
-ul li
-{
-	list-style: none;
-	display: inline-block;
-	padding: 20px;
+
+
+.footer-button {
+    display: none;
 }
-ul li:hover
-{
-	background: #fe7f00;
+
+.divprawaautor {
+    display: flex;
+    align-self: flex-end;
+    justify-content: flex-start;
+        padding-left: 0.5em;
 }
-ul li a
-{
-	color: black;
-	text-decoration: none;
-}*/
+
+
+
+
+
+}
